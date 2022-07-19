@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript - Tip Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/script.js" defer></script>
+  </head>
+
+  <body>
+    <!-- Main -->
+    <main class="fully-centered">
+      <section class="calculator">
+        <h1>Tip Calculator</h1>
+        <!-- Calculator -->
+        <form action="#">
+          <label for="bill-amt">Bill Amount</label>
+          <input
+            type="number"
+            id="bill-amt"
+            placeholder="Enter your bill amt"
+          />
+          <label for="service">Service Quality</label>
+          <select id="service">
+            <option disabled selected value="0">-- Choose an Option --</option>
+            <option value="0.3">30% - Outstanding</option>
+            <option value="0.2">20% - Excellent</option>
+            <option value="0.15">15% - Good</option>
+            <option value="0.1">10% - Ok</option>
+            <option value="0.05">5% - Decent</option>
+          </select>
+          <label for="people">Number of people splitting the bill</label>
+          <input type="text" id="people" />
+        </form>
+        <button>Calculate</button>
+        <div class="tip-display"></div>
+      </section>
+    </main>
+  </body>
+</html>

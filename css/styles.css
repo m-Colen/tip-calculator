@@ -1,0 +1,100 @@
+/* General Setup */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  /* Fonts */
+  primary-font: "Roboto", sans-serif;
+  /* Colors */
+  --background-color: #14213d; /* Blue */
+  --primary-color: #fca311; /* Yellow */
+  --secondary-color: #112; /* Silver */
+  /* Spacing */
+  --normal-padding: 0.75rem;
+  /* General */
+  --box-shadow:   box-shadow: 0 3px 10px #333;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(
+    90deg,
+    var(--background-color),
+    var(--secondary-color)
+  );
+  font-family: var(--primary-font);
+}
+
+html,
+body,
+main {
+  height: 100%;
+}
+
+.fully-centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Calculator */
+
+.calculator {
+  background: #fff;
+  border-radius: 10px;
+}
+
+.calculator,
+.calculator > * {
+  padding: var(--normal-padding);
+}
+
+.calculator > h1 {
+  background: #000;
+  color: #fff;
+  margin: 0;
+  border-radius: 5px 5px 0 0;
+  padding: 1rem;
+  font-size: 1.2rem;
+}
+
+h1,
+label,
+input {
+  text-align: center;
+}
+
+label,
+input,
+select,
+button {
+  display: block;
+  margin: 0 auto;
+  padding: var(--normal-padding);
+}
+
+button {
+  margin-top: var(--normal-padding);
+  border-radius: 50px;
+  width: 200px;
+  border: none;
+  background: salmon;
+  box-shadow: var(--box-shadow);
+  transition: .5s all ease-in forwards;
+}
+
+button:hover {
+  cursor: pointer;
+  background: linear-gradient(45deg, salmon, coral);
+}
+
+/* Tip display */
+
+.tip-display {
+  background: #222;
+  color: #fff;
+  margin: 1rem 0 .5rem 0;
+}
